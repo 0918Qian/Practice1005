@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="190dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="輸入舊密碼"
+            android:inputType="textPassword|numberPassword"
+            android:password="false" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="輸入新密碼"
+            android:inputType="textPersonName|numberPassword"
+            android:password="true" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="確認新密碼"
+            android:inputType="textPersonName|textPassword|numberPassword"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:gravity="center"
+            android:text="修改密碼" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="345dp"
+        android:layout_height="212dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.388">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="指紋辨識或輸入密碼"
+            android:inputType="textPersonName|numberPassword" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="進入畫面" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="再試一次" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
